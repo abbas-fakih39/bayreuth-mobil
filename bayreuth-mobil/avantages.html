@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avantages - Bayreuth Mobil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-[#FAFAFA] text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="flex justify-between items-center py-6 px-6 md:px-20 bg-white relative z-50 shadow-sm md:shadow-none">
+      
+      <a href="index.html" class="w-32 md:w-40 shrink-0 z-50">
+        <img src="./images/logobeayy.png" alt="Bayreuth Mobil Logo" class="w-full mix-blend-multiply">
+      </a>
+    
+      <ul class="hidden md:flex gap-10 font-bold text-brand-blue text-sm uppercase tracking-wide">
+        <li><a href="index.html" class="hover:text-brand-green transition-colors">Accueil</a></li>
+        <li><a href="#" class="hover:text-brand-green transition-colors">Tarifs</a></li>
+        <li><a href="#" class="hover:text-brand-green transition-colors">Notre Flotte</a></li>
+        <li><a href="#" class="hover:text-brand-green transition-colors">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="text-brand-green focus:outline-none md:hidden z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    
+      <div id="mobileMenu" class="absolute top-24 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
+        <ul class="space-y-4 text-left font-bold text-brand-blue text-lg">
+          <li><a href="index.html" class="block hover:text-brand-green transition-colors">Accueil</a></li>
+          <li><a href="#" class="block hover:text-brand-green transition-colors">Tarifs</a></li>
+          <li><a href="#" class="block hover:text-brand-green transition-colors">Notre Flotte</a></li>
+          <li><a href="#" class="block hover:text-brand-green transition-colors">Contact</a></li>
+        </ul>
+        <div class="mt-6 pt-6 border-t border-gray-100">
+           <a href="#" class="block text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 transition-all">Se connecter</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow px-6 md:px-12 lg:px-20 py-12 md:py-16 w-full max-w-[1200px] mx-auto">
+      
+      <h1 class="text-brand-blue text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-16 md:mb-20 lg:mb-24 tracking-tight">
+        Pourquoi choisir l'autopartage ?
+      </h1>
+
+      <div class="space-y-16 md:space-y-20 lg:space-y-24">
+
+        <!-- Advantage 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: Icon -->
+          <div class="flex justify-center md:justify-end">
+            <div class="shrink-0 transition-transform duration-500 hover:-translate-y-2 hover:scale-105">
+              <div class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-[6px] md:border-[8px] border-brand-green rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 text-black">
+                  <path d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.41l5.4-2.7a2.25 2.25 0 012.96 1.3l.5 1.8a2.25 2.25 0 01-1.3 2.96l-5.4 2.7a2.25 2.25 0 01-2.96-1.3l-.5-1.8a2.25 2.25 0 011.3-2.96z" />
+                  <path fill-rule="evenodd" d="M2.25 12.75a3 3 0 003 3h13.5a3 3 0 003-3v-3a3 3 0 00-3-3H5.25a3 3 0 00-3 3v3zm15-1.5a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text -->
+          <div class="text-center md:text-left">
+            <h2 class="text-brand-blue text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-5 lg:mb-6">
+              Fini les frais fixes.
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg lg:text-xl font-medium">
+              Oubliez l'assurance, l'entretien et le stationnement. Avec BayreuthMobil, vous ne payez que lorsque vous conduisez. Une solution économique pour une liberté totale.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: Text -->
+          <div class="text-center md:text-right order-2 md:order-1">
+            <h2 class="text-brand-blue text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-5 lg:mb-6">
+              100% Écologique.
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg lg:text-xl font-medium">
+              Réduisez votre empreinte carbone. Nos véhicules récents et notre flotte électrique contribuent à une ville plus verte et plus respirable pour tous.
+            </p>
+          </div>
+
+          <!-- Right: Icon -->
+          <div class="flex justify-center md:justify-start order-1 md:order-2">
+            <div class="shrink-0 transition-transform duration-500 hover:-translate-y-2 hover:scale-105">
+              <div class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-[6px] md:border-[8px] border-brand-green rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 text-black">
+                  <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177 7.547 7.547 0 01-1.705-1.715.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: Icon -->
+          <div class="flex justify-center md:justify-end">
+            <div class="shrink-0 transition-transform duration-500 hover:-translate-y-2 hover:scale-105">
+              <div class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-[6px] md:border-[8px] border-brand-green rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 text-black">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                  <polygon points="12 5 13.09 6.85 15.25 7.27 13.75 8.88 14 11 12 10.05 10 11 10.25 8.88 8.75 7.27 10.91 6.85 12 5" fill="none" stroke-width="2.5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text -->
+          <div class="text-center md:text-left">
+            <h2 class="text-brand-blue text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 md:mb-5 lg:mb-6">
+              Qualité Premium.
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg lg:text-xl font-medium">
+              Profitez de véhicules toujours propres, entretenus et prêts à partir. Notre service client est disponible 24h/24 pour vous accompagner.
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="bg-brand-green text-black pt-12 pb-8 px-6 mt-auto">
+      <div class="flex flex-col items-center text-center gap-8 max-w-lg mx-auto">
+        
+        <div class="w-40">
+          <img src="./images/logobeayy.png" alt="Bayreuth Mobil Logo" class="mix-blend-multiply">
+        </div>
+
+        <div class="space-y-3 font-bold text-sm w-full">
+          <a href="#" class="block hover:underline hover:text-white transition-colors">Tarifs</a>
+          <a href="#" class="block hover:underline hover:text-white transition-colors">Nos véhicules</a>
+          <a href="#" class="block hover:underline hover:text-white transition-colors">Avantages</a>
+          <a href="#" class="block hover:underline hover:text-white transition-colors">Qui sommes nous ?</a>
+          <a href="#" class="block hover:underline hover:text-white transition-colors">Contact</a>
+        </div>
+
+        <div class="space-y-4 w-full border-t border-black/10 pt-6">
+           <h3 class="font-extrabold uppercase tracking-widest text-xs mb-1 opacity-60">Nous contacter</h3>
+           <a href="/cdn-cgi/l/email-protection#ed84838b82ad8f8c949f8898998580828f8481c38988" class="block font-bold text-sm"><span class="__cf_email__" data-cfemail="c2abaca4ad82a0a3bbb0a7b7b6aaafada0abaeeca6a7">[email&#160;protected]</span></a>
+           <a href="tel:+49921123456" class="block font-bold text-sm">+49 921 123 456</a>
+           <p class="font-bold text-sm leading-relaxed mt-4">
+              Hohenzollernring 70<br>95444 Bayreuth
+           </p>
+        </div>
+
+        <div class="flex gap-4 mt-2">
+          <a href="#" class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+          <a href="#" class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.306c0-4.613 5.432-5.17 5.432 0v8.306h5v-10.595c0-8.125-8.717-7.878-10.464-3.84v-3.865z"/></svg></a>
+          <a href="#" class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-black/20 mt-8 pt-6 text-center">
+        <p class="text-[10px] font-bold opacity-70">
+          All rights reserved © bayreuthmobil.com | Terms and conditions apply!
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // --- Menu Logic ---
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('flex');
+        });
+        
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
