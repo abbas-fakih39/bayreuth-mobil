@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
+    "./*.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -15,7 +15,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Montserrat', 'Roboto'], 
+        sans: ['Montserrat', 'Roboto'],
       },
       borderRadius: {
         'xl': '1rem',
