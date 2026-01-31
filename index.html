@@ -6,18 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bayreuth Mobil</title>
   <link href="/src/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-700 font-sans">
 
-  <nav class="flex justify-between items-center py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
+  <!-- Navigation -->
+  <header>
+  <nav
+    class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
 
-    <div class="w-32 shrink-0 z-50 mx-auto md:mx-0">
-      <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil"
-          class="h-auto mix-blend-multiply md:w-32"></a>
+    <div
+      class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
+      <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil" class="h-auto mix-blend-multiply"></a>
     </div>
 
-    <ul class="hidden md:flex gap-10 font-bold text-brand-blue text-sm uppercase tracking-wide">
+    <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
       <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
       <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
       <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a></li>
@@ -26,7 +34,7 @@
 
     <div class="hidden md:block shrink-0">
       <a href="#"
-        class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 transition text-sm">
+        class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
         Se connecter
       </a>
     </div>
@@ -38,6 +46,7 @@
       </svg>
     </button>
 
+    <!-- Mobile Menu -->
     <div id="mobileMenu"
       class="absolute top-20 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
 
@@ -61,20 +70,22 @@
 
       <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
         <a href="#"
-          class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white transition">
+          class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
           Se connecter
         </a>
         <a href="#"
-          class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 transition">
+          class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
           S'inscrire
         </a>
       </div>
 
     </div>
   </nav>
+  </header>
 
   <div class="max-w-[1400px] mx-auto overflow-hidden">
 
+    <!-- HERO SECTION -->
     <header class="relative px-6 md:px-20 py-12 md:py-24">
       <div class="absolute top-0 left-0 w-[60%] h-full bg-brand-light rounded-br-[10rem] -z-10 hidden md:block"></div>
       <div class="absolute top-0 left-0 w-full h-[80%] bg-brand-light rounded-b-[3rem] -z-10 md:hidden"></div>
@@ -83,14 +94,14 @@
 
         <div class="w-full md:w-1/2 text-center md:text-left">
           <h1 class="text-brand-blue text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            Einfach mobil in <br /> <span class="text-brand-green">Bayreuth.</span>
+            Le carsharing à Bayreuth: <br />simple, flexible et <span class="text-brand-green">écologique.</span>
           </h1>
           <p class="text-gray-500 text-base md:text-lg mb-8 md:pr-12">
-            CarSharing in Bayreuth. Klimaschutz, der Spaß macht.
-            Registrieren Sie sich jetzt online und fahren Sie sofort los.
+            Une voiture quand vous en avez besoin, sans les contraintes de la possession. Protecteurs du climat depuis
+            1993.
           </p>
-          <a href="#"
-            class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 transition transform hover:-translate-y-1">
+          <a href="vehicules.html"
+            class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform">
             Réserver un véhicule →
           </a>
         </div>
@@ -106,6 +117,7 @@
       </div>
     </header>
 
+    <!-- AGENCY SECTION -->
     <section class="px-6 md:px-20 py-16 md:py-32">
       <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24">
 
@@ -116,82 +128,94 @@
             Profitez de nos véhicules disponibles 24h/24 et 7j/7 partout en ville. Une solution flexible pour les
             particuliers et les professionnels.
           </p>
-          <button
-            class="bg-brand-green text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition">
+          <a href="qui-sommes-nous.html"
+            class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform">
             En savoir plus →
-          </button>
+          </a>
         </div>
 
         <div class="w-full md:w-1/2 relative order-1 md:order-2">
           <div class="absolute -right-4 -bottom-4 w-3/4 h-3/4 bg-brand-green/20 rounded-[2rem] -z-10"></div>
-          <img src="./images/Carsharing.jpg" alt="Agency" class="rounded-[2rem] shadow-xl w-full border-4 border-white">
+          <img src="./images/archive.png" alt="Agency" class="rounded-[2rem] shadow-xl w-full border-4 border-white">
         </div>
 
       </div>
     </section>
 
   </div>
+!-- EXPERTISE SECTION -->
+  <
+  <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
+    <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-4">Nos expertises</h2>
 
-  <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto text-center">
-    <h2 class="text-brand-blue text-3xl md:text-4xl font-bold mb-4">Nos expertises</h2>
-
-    <p class="text-gray-500 text-sm md:text-base mb-12 max-w-2xl mx-auto">
+    <p class="text-gray-500 text-sm md:text-base mb-12 max-w-2xl mx-auto text-center">
       Découvrez nos services exclusifs pour votre mobilité. Des solutions adaptées à vos besoins, que vous soyez un
       particulier ou une entreprise.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 px-4">
 
-      <div
-        class="bg-white border-2 border-brand-green rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition hover:-translate-y-2 group">
-        <div class="h-16 w-16 mx-auto mb-6 text-brand-green group-hover:scale-110 transition-transform">
-          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
+      <!-- Advantage 1 -->
+      <div class="flex flex-col items-center text-center group">
+        <div class="mb-6 transition-transform duration-500">
+          <div
+            class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 border-[6px] border-brand-green rounded-[2rem] bg-white shadow-xl flex items-center justify-center mx-auto">
+            <img src="./images/monnaie.png" alt="Économique"
+              class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain">
+          </div>
         </div>
-        <h3 class="text-brand-blue font-bold text-xl mb-3">Prix imbattables</h3>
-        <p class="text-sm text-gray-500">
-          Tarifs ultra compétitifs pour tous vos trajets, courts ou longs.
+        <h3 class="text-brand-blue text-xl md:text-2xl font-extrabold mb-3">
+          Fini les frais fixes.
+        </h3>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-medium max-w-sm">
+          Oubliez l'assurance, l'entretien et le stationnement. Avec BayreuthMobil, vous ne payez que lorsque vous
+          conduisez. Une solution économique pour une liberté totale.
         </p>
       </div>
 
-      <div
-        class="bg-white border-2 border-brand-green rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition hover:-translate-y-2 group">
-        <div class="h-16 w-16 mx-auto mb-6 text-brand-green group-hover:scale-110 transition-transform">
-          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
-          </svg>
+      <!-- Advantage 2 -->
+      <div class="flex flex-col items-center text-center group">
+        <div class="mb-6 transition-transform duration-500">
+          <div
+            class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 border-[6px] border-brand-green rounded-[2rem] bg-white shadow-xl flex items-center justify-center mx-auto">
+            <img src="./images/feuille.png" alt="Écologique"
+              class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain">
+          </div>
         </div>
-        <h3 class="text-brand-blue font-bold text-xl mb-3">Plein inclus (gaz)</h3>
-        <p class="text-sm text-gray-500">
-          Ne vous souciez pas du carburant, tout est compris dans le prix.
+        <h3 class="text-brand-blue text-xl md:text-2xl font-extrabold mb-3">
+          100% Écologique.
+        </h3>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-medium max-w-sm">
+          Réduisez votre empreinte carbone. Nos véhicules récents et notre flotte électrique contribuent à une
+          ville
+          plus verte et plus respirable pour tous.
         </p>
       </div>
 
-      <div
-        class="bg-white border-2 border-brand-green rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition hover:-translate-y-2 group">
-        <div class="h-16 w-16 mx-auto mb-6 text-brand-green group-hover:scale-110 transition-transform">
-          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-          </svg>
+      <!-- Advantage 3 -->
+      <div class="flex flex-col items-center text-center group">
+        <div class="mb-6 transition-transform duration-500">
+          <div
+            class="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 border-[6px] border-brand-green rounded-[2rem] bg-white shadow-xl flex items-center justify-center mx-auto">
+            <img src="./images/badge.png" alt="Qualité"
+              class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain">
+          </div>
         </div>
-        <h3 class="text-brand-blue font-bold text-xl mb-3">Assurance inclus</h3>
-        <p class="text-sm text-gray-500">
-          Voyagez l'esprit tranquille avec notre couverture complète.
+        <h3 class="text-brand-blue text-xl md:text-2xl font-extrabold mb-3">
+          Qualité Premium.
+        </h3>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-medium max-w-sm">
+          Profitez de véhicules toujours propres, entretenus et prêts à partir. Notre service client est
+          disponible
+          24h/24 pour vous accompagner.
         </p>
       </div>
 
     </div>
 
-    <button
-      class="mt-12 bg-brand-green text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition">
-      En savoir plus →
-    </button>
   </section>
-
+!-- HOW IT WORKS SECTION -->
+  <
   <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
     <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">
       Comment ça marche ?
@@ -244,15 +268,16 @@
     </div>
 
     <div class="text-center mt-12">
-      <a href="#"
-        class="inline-block bg-brand-green text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-opacity-90 transition">
-        Tous les tarifs →
+      <a href="comment-ca-marche.html"
+        class="inline-block bg-brand-green text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        En savoir plus →
       </a>
     </div>
   </section>
 
   <div class="max-w-[1400px] mx-auto">
 
+    <!-- FLEET CAROUSEL SECTION -->
     <section class="py-16 text-center overflow-hidden">
 
       <div class="flex flex-col md:flex-row justify-between items-center md:items-end px-6 md:px-20 mb-8 gap-6">
@@ -281,7 +306,7 @@
       <div id="fleetCarousel"
         class="flex overflow-x-auto gap-6 px-6 md:px-20 py-8 snap-x snap-mandatory no-scrollbar scroll-smooth">
 
-        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
+        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300">
           <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
             <img src="./images/vw-passat-kombi-carsharing-bayreuth.jpg" alt="Citadine"
@@ -337,13 +362,14 @@
       </div>
 
       <div class="mt-12">
-        <a href="#"
+        <a href="vehicules.html"
           class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 transition transform hover:-translate-y-1">
           Réserver un véhicule →
         </a>
       </div>
     </section>
 
+    <!-- NEWS SECTION -->
     <section class="py-16 px-6 md:px-20 bg-white">
       <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">Nos actualités</h2>
 
@@ -400,6 +426,7 @@
       </div>
     </section>
 
+    <!-- PARTNERS SECTION -->
     <section class="py-16 px-6 md:px-20 text-center">
       <h2 class="text-brand-blue text-3xl md:text-4xl font-bold mb-10">Nos partenaires</h2>
       <div
@@ -414,6 +441,7 @@
 
   </div>
 
+  <!-- FOOTER -->
   </main>
   <footer class="bg-brand-green text-black pt-16 pb-8 px-6 md:px-20 mt-12">
 
@@ -427,93 +455,93 @@
       <div class="md:w-1/4 space-y-8">
         <div>
           <h3 class="font-extrabold uppercase tracking-widest mb-2">Email</h3>
-          <a href="mailto:info@nexus.com" class="font-bold text-sm hover:underline">info@nexus.com</a>
+          <a href="mailto:info@bayreuthmobil.com" class="font-bold text-sm hover:underline">info@bayreuthmobil.com</a>
         </div>
         <div>
           <h3 class="font-extrabold uppercase tracking-widest mb-2">Agences</h3>
           <p class="font-bold text-sm leading-relaxed">
-            Horizon Convention Center<br>
-            Amsterdam, Netherlands
+            Bayreuth Hauptbahnhof<br>
+            Bayreuth, Deutschland
           </p>
         </div>
       </div>
 
       <div class="md:w-1/6">
-        <h3 class="font-extrabold uppercase tracking-widest mb-2">Contact Us</h3>
-        <a href="tel:+31201234567" class="font-bold text-sm hover:underline">+31 20 123 4567</a>
-      </div>
+            <h3 class="font-extrabold uppercase tracking-widest mb-2">Contact Us</h3>
+            <a href="tel:+31201234567" class="font-bold text-sm hover:underline">+31 20 123 4567</a>
+          </div>
 
-      <div class="md:w-1/3 flex flex-col md:flex-row gap-8 md:gap-16 w-full md:justify-end">
+          <div class="md:w-1/3 flex flex-col md:flex-row gap-8 md:gap-16 w-full md:justify-end">
 
-        <ul class="space-y-3 font-extrabold text-sm">
-          <li><a href="tarifs.html" class="hover:underline">Tarifs</a></li>
-          <li><a href="vehicules.html" class="hover:underline">Nos véhicules</a></li>
-          <li><a href="avantages.html" class="hover:underline">Avantages</a></li>
-        </ul>
+            <ul class="space-y-3 font-extrabold text-sm">
+              <li><a href="tarifs.html" class="hover:underline">Tarifs</a></li>
+              <li><a href="vehicules.html" class="hover:underline">Nos véhicules</a></li>
+            </ul>
 
-        <ul class="space-y-3 font-extrabold text-sm">
-          <li><a href="qui-sommes-nous.html" class="hover:underline">Qui sommes nous ?</a></li>
-          <li><a href="comment-ca-marche.html" class="hover:underline">Comment ça marche</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-          <li><a href="faq.html" class="hover:underline">FAQ</a></li>
-        </ul>
+            <ul class="space-y-3 font-extrabold text-sm">
+              <li><a href="qui-sommes-nous.html" class="hover:underline">Qui sommes nous ?</a></li>
+              <li><a href="comment-ca-marche.html" class="hover:underline">Comment ça marche</a></li>
+              <li><a href="contact.html" class="hover:underline">Contact</a></li>
+              <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+            </ul>
 
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <hr class="border-black opacity-20 my-10 max-w-[1400px] mx-auto">
+        <hr class="border-black opacity-20 my-10 max-w-[1400px] mx-auto">
 
-    <div class="max-w-[1400px] mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+        <div class="max-w-[1400px] mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-8">
 
-      <p class="text-[11px] font-bold opacity-70">
-        All rights reserved © bayreuthmobil.com | Terms and conditions apply!
-      </p>
+          <p class="text-[11px] font-bold opacity-70">
+            All rights reserved © bayreuthmobil.com | Terms and conditions apply!
+          </p>
 
-      <div class="flex gap-4">
+          <div class="flex gap-4">
 
-        <a href="#"
-          class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-          </svg>
-        </a>
+            <a href="#"
+              class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
 
-        <a href="#"
-          class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-          </svg>
-        </a>
+            <a href="#"
+              class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+              </svg>
+            </a>
 
-        <a href="#"
-          class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.306c0-4.613 5.432-5.17 5.432 0v8.306h5v-10.595c0-8.125-8.717-7.878-10.464-3.84v-3.865z" />
-          </svg>
-        </a>
+            <a href="#"
+              class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.306c0-4.613 5.432-5.17 5.432 0v8.306h5v-10.595c0-8.125-8.717-7.878-10.464-3.84v-3.865z" />
+              </svg>
+            </a>
 
-        <a href="#"
-          class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
+            <a href="#"
+              class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
 
-        <a href="#"
-          class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.399.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.173 0 7.41 2.967 7.41 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
-          </svg>
-        </a>
+            <a href="#"
+              class="w-10 h-10 bg-black text-brand-green rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.399.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.173 0 7.41 2.967 7.41 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
+              </svg>
+            </a>
 
-      </div>
+          </div>
 
-    </div>
+        </div>
+  <!-- SCRIPTS -->
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

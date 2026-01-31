@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos véhicules - Bayreuth Mobil</title>
     <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-700 font-sans">
 
+    <!-- NAVIGATION -->
+    <header>
     <nav
-        class="flex justify-between items-center py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
+        class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
 
-        <div class="w-32 shrink-0 z-50 mx-auto md:mx-0">
+        <div
+            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
             <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil"
                     class="h-auto mix-blend-multiply"></a>
         </div>
 
-        <ul class="hidden md:flex gap-10 font-bold text-brand-blue text-sm uppercase tracking-wide">
+        <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
             <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
             <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
             <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a></li>
@@ -27,7 +35,7 @@
 
         <div class="hidden md:block shrink-0">
             <a href="#"
-                class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 transition text-sm">
+                class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
                 Se connecter
             </a>
         </div>
@@ -64,24 +72,149 @@
 
             <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
                 <a href="#"
-                    class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white transition">
+                    class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
                     Se connecter
                 </a>
                 <a href="#"
-                    class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 transition">
+                    class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
                     S'inscrire
                 </a>
             </div>
 
         </div>
     </nav>
+    </header>
 
     <!-- Contenu principal de la page Véhicules -->
     <main class="max-w-[1400px] mx-auto px-6 md:px-20 py-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-brand-blue text-center mb-12">Nos Véhicules</h1>
-        <!-- Ajoutez votre contenu ici -->
+        <h1
+            class="text-brand-blue text-3xl md:text-5xl font-extrabold text-center mb-12 md:mb-24 tracking-tight font-montserrat uppercase">
+            Nos véhicules
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16">
+
+            <!-- Vehicle 1 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/vw-passat-kombi-carsharing-bayreuth.jpg" alt="VW Passat Kombi"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">VW Passat Kombi</h3>
+                    <p class="text-gray-500 text-sm font-medium">Familiale & Spacieuse</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 2 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/vw-touran-carsharing-bayreuth.jpg" alt="VW Touran"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">VW Touran</h3>
+                    <p class="text-gray-500 text-sm font-medium">7 places - Idéal groupes</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 3 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/carsharing-bayreuth-opel.jpg" alt="Opel Corsa"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Opel Corsa</h3>
+                    <p class="text-gray-500 text-sm font-medium">Citadine agile</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 4 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/mercedes-carsharing-bayreuth.jpg" alt="Mercedes Classe A"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Mercedes Classe A</h3>
+                    <p class="text-gray-500 text-sm font-medium">Confort & Premium</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 5 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/Maserati-GranCabrio-Auto-Class-Magazine.jpg" alt="Maserati GranCabrio"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Maserati GranCabrio</h3>
+                    <p class="text-gray-500 text-sm font-medium">Luxe & Sport (Édition limitée)</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 6 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/vgn-carsharing.jpg" alt="Ford Fiesta"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Ford Fiesta</h3>
+                    <p class="text-gray-500 text-sm font-medium">Économique & Pratique</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 7 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/ouverture-portiere.jpg" alt="Renault Zoe"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Renault Zoe</h3>
+                    <p class="text-gray-500 text-sm font-medium">100% Électrique</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 8 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/Carsharing.jpg" alt="Toyota Yaris"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">Toyota Yaris</h3>
+                    <p class="text-gray-500 text-sm font-medium">Hybride</p>
+                </div>
+            </div>
+
+            <!-- Vehicle 9 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden rounded-[2.5rem] shadow-lg border border-gray-100 transition-all duration-300">
+                    <img src="./images/vw-touran-carsharing-bayreuth.jpg" alt="VW Caddy"
+                        class="w-full h-full object-cover transform transition-transform duration-500">
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-brand-blue font-bold text-xl mb-1 font-montserrat">VW Caddy</h3>
+                    <p class="text-gray-500 text-sm font-medium">Utilitaire</p>
+                </div>
+            </div>
+
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-brand-green text-black pt-16 pb-8 px-6 md:px-20 mt-12">
 
         <div
@@ -94,13 +227,14 @@
             <div class="md:w-1/4 space-y-8">
                 <div>
                     <h3 class="font-extrabold uppercase tracking-widest mb-2">Email</h3>
-                    <a href="mailto:info@nexus.com" class="font-bold text-sm hover:underline">info@nexus.com</a>
+                    <a href="mailto:info@bayreuthmobil.com"
+                        class="font-bold text-sm hover:underline">info@bayreuthmobil.com</a>
                 </div>
                 <div>
                     <h3 class="font-extrabold uppercase tracking-widest mb-2">Agences</h3>
                     <p class="font-bold text-sm leading-relaxed">
-                        Horizon Convention Center<br>
-                        Amsterdam, Netherlands
+                        Bayreuth Hauptbahnhof<br>
+                        Bayreuth, Deutschland
                     </p>
                 </div>
             </div>
@@ -115,10 +249,7 @@
                 <ul class="space-y-3 font-extrabold text-sm">
                     <li><a href="tarifs.html" class="hover:underline">Tarifs</a></li>
                     <li><a href="vehicules.html" class="hover:underline">Nos véhicules</a></li>
-                    <li><a href="avantages.html" class="hover:underline">Avantages</a></li>
-                </ul>
 
-                <ul class="space-y-3 font-extrabold text-sm">
                     <li><a href="qui-sommes-nous.html" class="hover:underline">Qui sommes nous ?</a></li>
                     <li><a href="comment-ca-marche.html" class="hover:underline">Comment ça marche</a></li>
                     <li><a href="contact.html" class="hover:underline">Contact</a></li>
