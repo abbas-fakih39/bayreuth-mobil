@@ -17,70 +17,71 @@
 
   <!-- Navigation -->
   <header>
-  <nav
-    class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
+    <nav
+      class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
 
-    <div
-      class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
-      <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil" class="h-auto mix-blend-multiply"></a>
-    </div>
+      <div
+        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
+        <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil"
+            class="h-auto mix-blend-multiply"></a>
+      </div>
 
-    <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
-      <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
-      <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
-      <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a></li>
-      <li><a href="contact.html" class="hover:text-brand-green transition">Contact</a></li>
-    </ul>
-
-    <div class="hidden md:block shrink-0">
-      <a href="#"
-        class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
-        Se connecter
-      </a>
-    </div>
-
-    <button id="menuBtn" class="text-brand-green focus:outline-none md:hidden z-50">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-        class="w-10 h-10">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu"
-      class="absolute top-20 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
-
-      <button id="closeBtn" class="self-end text-gray-400 hover:text-red-500 mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-          class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <ul class="space-y-4 text-left font-bold text-brand-blue text-lg">
-        <li><a href="vehicules.html" class="block hover:text-brand-green hover:translate-x-1 transition-transform">Nos
-            véhicules</a></li>
-        <li><a href="tarifs.html"
-            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Tarifs</a></li>
-        <li><a href="comment-ca-marche.html"
-            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Comment ça marche</a></li>
-        <li><a href="contact.html"
-            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Contact</a></li>
+      <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
+        <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
+        <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
+        <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a></li>
+        <li><a href="contact.html" class="hover:text-brand-green transition">Contact</a></li>
       </ul>
 
-      <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
+      <div class="hidden md:block shrink-0">
         <a href="#"
-          class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+          class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
           Se connecter
-        </a>
-        <a href="#"
-          class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
-          S'inscrire
         </a>
       </div>
 
-    </div>
-  </nav>
+      <button id="menuBtn" class="text-brand-green focus:outline-none md:hidden z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu"
+        class="absolute top-20 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
+
+        <button id="closeBtn" class="self-end text-gray-400 hover:text-red-500 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <ul class="space-y-4 text-left font-bold text-brand-blue text-lg">
+          <li><a href="vehicules.html" class="block hover:text-brand-green hover:translate-x-1 transition-transform">Nos
+              véhicules</a></li>
+          <li><a href="tarifs.html"
+              class="block hover:text-brand-green hover:translate-x-1 transition-transform">Tarifs</a></li>
+          <li><a href="comment-ca-marche.html"
+              class="block hover:text-brand-green hover:translate-x-1 transition-transform">Comment ça marche</a></li>
+          <li><a href="contact.html"
+              class="block hover:text-brand-green hover:translate-x-1 transition-transform">Contact</a></li>
+        </ul>
+
+        <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
+          <a href="#"
+            class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+            Se connecter
+          </a>
+          <a href="#"
+            class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+            S'inscrire
+          </a>
+        </div>
+
+      </div>
+    </nav>
   </header>
 
   <div class="max-w-[1400px] mx-auto overflow-hidden">
@@ -143,9 +144,8 @@
     </section>
 
   </div>
-!-- EXPERTISE SECTION -->
-  <
-  <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
+  !-- EXPERTISE SECTION -->
+  < <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
     <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-4">Nos expertises</h2>
 
     <p class="text-gray-500 text-sm md:text-base mb-12 max-w-2xl mx-auto text-center">
@@ -213,260 +213,260 @@
 
     </div>
 
-  </section>
-!-- HOW IT WORKS SECTION -->
-  <
-  <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
-    <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">
-      Comment ça marche ?
-    </h2>
+    </section>
+    !-- HOW IT WORKS SECTION -->
+    < <section class="py-16 px-6 md:px-20 max-w-[1400px] mx-auto">
+      <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">
+        Comment ça marche ?
+      </h2>
 
-    <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-6">
+      <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-6">
 
-      <div
-        class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
-        <div class="relative z-10 h-full flex flex-col justify-start">
-          <h3 class="font-bold uppercase text-base mb-3 text-left">Inscrivez-vous <br>rapidement</h3>
-          <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
-            Téléchargez l'app, scannez votre permis et c'est parti. Validation en 2 min.
-          </p>
-        </div>
-        <span
-          class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
-          01
-        </span>
-      </div>
-
-      <div
-        class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
-        <div class="relative z-10 h-full flex flex-col justify-start">
-          <h3 class="font-bold uppercase text-base mb-3 text-left">Choisissez votre <br>véhicule</h3>
-          <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
-            Une citadine pour la ville ou un break pour le week-end ?
-          </p>
-        </div>
-        <span
-          class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
-          02
-        </span>
-      </div>
-
-      <div
-        class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
-        <div class="relative z-10 h-full flex flex-col justify-start">
-          <h3 class="font-bold uppercase text-base mb-3 text-left">Partez en toute <br>liberté</h3>
-          <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
-            Déverrouillez avec l'app et roulez sans contraintes ni clés.
-          </p>
-        </div>
-        <span
-          class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
-          03
-        </span>
-      </div>
-
-    </div>
-
-    <div class="text-center mt-12">
-      <a href="comment-ca-marche.html"
-        class="inline-block bg-brand-green text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-        En savoir plus →
-      </a>
-    </div>
-  </section>
-
-  <div class="max-w-[1400px] mx-auto">
-
-    <!-- FLEET CAROUSEL SECTION -->
-    <section class="py-16 text-center overflow-hidden">
-
-      <div class="flex flex-col md:flex-row justify-between items-center md:items-end px-6 md:px-20 mb-8 gap-6">
-        <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center md:text-left leading-tight">
-          Découvrez notre <br> flotte de véhicules
-        </h2>
-
-        <div class="hidden md:flex gap-4">
-          <button id="prevBtnDesktop"
-            class="w-14 h-14 rounded-full bg-brand-green text-white shadow-lg shadow-brand-green/20 flex items-center justify-center hover:bg-brand-dark hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-          </button>
-          <button id="nextBtnDesktop"
-            class="w-14 h-14 rounded-full bg-brand-green text-white shadow-lg shadow-brand-green/20 flex items-center justify-center hover:bg-brand-dark hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div id="fleetCarousel"
-        class="flex overflow-x-auto gap-6 px-6 md:px-20 py-8 snap-x snap-mandatory no-scrollbar scroll-smooth">
-
-        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300">
-          <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
-            <img src="./images/vw-passat-kombi-carsharing-bayreuth.jpg" alt="Citadine"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Citadines</span>
+        <div
+          class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
+          <div class="relative z-10 h-full flex flex-col justify-start">
+            <h3 class="font-bold uppercase text-base mb-3 text-left">Inscrivez-vous <br>rapidement</h3>
+            <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
+              Téléchargez l'app, scannez votre permis et c'est parti. Validation en 2 min.
+            </p>
           </div>
+          <span
+            class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
+            01
+          </span>
         </div>
 
-        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
-          <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
-            <img src="./images/mercedes-carsharing-bayreuth.jpg" alt="Familiale"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Familiales</span>
+        <div
+          class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
+          <div class="relative z-10 h-full flex flex-col justify-start">
+            <h3 class="font-bold uppercase text-base mb-3 text-left">Choisissez votre <br>véhicule</h3>
+            <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
+              Une citadine pour la ville ou un break pour le week-end ?
+            </p>
           </div>
+          <span
+            class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
+            02
+          </span>
         </div>
 
-        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
-          <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
-            <img src="./images/vw-touran-carsharing-bayreuth.jpg" alt="Utilitaire"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Utilitaires</span>
+        <div
+          class="relative bg-brand-blue rounded-[2.5rem] p-8 text-white h-56 md:h-64 overflow-hidden shadow-lg hover:scale-[1.02] transition-transform w-full md:w-[calc(50%-1rem)] group">
+          <div class="relative z-10 h-full flex flex-col justify-start">
+            <h3 class="font-bold uppercase text-base mb-3 text-left">Partez en toute <br>liberté</h3>
+            <p class="text-sm opacity-80 leading-relaxed max-w-[70%] ml-auto text-right">
+              Déverrouillez avec l'app et roulez sans contraintes ni clés.
+            </p>
           </div>
-        </div>
-
-        <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
-          <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
-            <img src="./images/carsharing-bayreuth-opel.jpg" alt="Electrique"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Électriques</span>
-          </div>
+          <span
+            class="absolute -bottom-6 -left-2 text-[8rem] md:text-[10rem] font-bold text-brand-green opacity-100 leading-none group-hover:scale-105 transition-transform">
+            03
+          </span>
         </div>
 
       </div>
 
-      <div class="flex justify-center items-center gap-6 mt-8 md:hidden">
-        <button id="prevBtn"
-          class="w-12 h-12 rounded-full bg-brand-green text-white shadow-md flex items-center justify-center hover:bg-brand-dark transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-        <button id="nextBtn"
-          class="w-12 h-12 rounded-full bg-brand-green text-white shadow-md flex items-center justify-center hover:bg-brand-dark transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="mt-12">
-        <a href="vehicules.html"
-          class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 transition transform hover:-translate-y-1">
-          Réserver un véhicule →
+      <div class="text-center mt-12">
+        <a href="comment-ca-marche.html"
+          class="inline-block bg-brand-green text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          En savoir plus →
         </a>
       </div>
-    </section>
+      </section>
 
-    <!-- NEWS SECTION -->
-    <section class="py-16 px-6 md:px-20 bg-white">
-      <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">Nos actualités</h2>
+      <div class="max-w-[1400px] mx-auto">
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- FLEET CAROUSEL SECTION -->
+        <section class="py-16 text-center overflow-hidden">
 
-        <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
-          <span
-            class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Expertise</span>
-          <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
-            <img src="./images/images.jpg" alt="News 1"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="flex flex-col md:flex-row justify-between items-center md:items-end px-6 md:px-20 mb-8 gap-6">
+            <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center md:text-left leading-tight">
+              Découvrez notre <br> flotte de véhicules
+            </h2>
+
+            <div class="hidden md:flex gap-4">
+              <button id="prevBtnDesktop"
+                class="w-14 h-14 rounded-full bg-brand-green text-white shadow-lg shadow-brand-green/20 flex items-center justify-center hover:bg-brand-dark hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button id="nextBtnDesktop"
+                class="w-14 h-14 rounded-full bg-brand-green text-white shadow-lg shadow-brand-green/20 flex items-center justify-center hover:bg-brand-dark hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
           </div>
-          <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Nouveaux véhicules électriques !</h3>
-          <p class="text-xs text-gray-500 mb-4 line-clamp-3">
-            Nous avons ajouté 10 nouvelles bornes de recharge et des véhicules Tesla à notre flotte.
-          </p>
-          <a href="#"
-            class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
-            savoir plus →</a>
-        </div>
 
-        <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
-          <span
-            class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Sécurité</span>
-          <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
-            <img src="./images/covid).jpg" alt="News 2"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div id="fleetCarousel"
+            class="flex overflow-x-auto gap-6 px-6 md:px-20 py-8 snap-x snap-mandatory no-scrollbar scroll-smooth">
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300">
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                <img src="./images/vw-passat-kombi-carsharing-bayreuth.jpg" alt="Citadine"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Citadines</span>
+              </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                <img src="./images/mercedes-carsharing-bayreuth.jpg" alt="Familiale"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Familiales</span>
+              </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                <img src="./images/vw-touran-carsharing-bayreuth.jpg" alt="Utilitaire"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Utilitaires</span>
+              </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[350px] transition-transform duration-300 hover:scale-105">
+              <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white relative h-64 md:h-80 group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                <img src="./images/carsharing-bayreuth-opel.jpg" alt="Electrique"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <span class="absolute bottom-6 left-6 text-white font-bold text-xl z-20">Électriques</span>
+              </div>
+            </div>
+
           </div>
-          <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Nettoyage certifié COVID-19</h3>
-          <p class="text-xs text-gray-500 mb-4 line-clamp-3">
-            Tous nos véhicules sont désinfectés entre chaque utilisation pour votre sécurité.
-          </p>
-          <a href="#"
-            class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
-            savoir plus →</a>
-        </div>
 
-        <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
-          <span
-            class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Offre</span>
-          <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
-            <img src="./images/Maserati-GranCabrio-Auto-Class-Magazine.jpg" alt="News 3"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="flex justify-center items-center gap-6 mt-8 md:hidden">
+            <button id="prevBtn"
+              class="w-12 h-12 rounded-full bg-brand-green text-white shadow-md flex items-center justify-center hover:bg-brand-dark transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <button id="nextBtn"
+              class="w-12 h-12 rounded-full bg-brand-green text-white shadow-md flex items-center justify-center hover:bg-brand-dark transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
           </div>
-          <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Week-end Spécial -20%</h3>
-          <p class="text-xs text-gray-500 mb-4 line-clamp-3">
-            Profitez de nos tarifs réduits pour vos escapades du week-end ce mois-ci.
-          </p>
-          <a href="#"
-            class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
-            savoir plus →</a>
-        </div>
+
+          <div class="mt-12">
+            <a href="vehicules.html"
+              class="inline-block bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-opacity-90 transition transform hover:-translate-y-1">
+              Réserver un véhicule →
+            </a>
+          </div>
+        </section>
+
+        <!-- NEWS SECTION -->
+        <section class="py-16 px-6 md:px-20 bg-white">
+          <h2 class="text-brand-blue text-3xl md:text-4xl font-bold text-center mb-12">Nos actualités</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+              <span
+                class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Expertise</span>
+              <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
+                <img src="./images/images.jpg" alt="News 1"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Nouveaux véhicules électriques !</h3>
+              <p class="text-xs text-gray-500 mb-4 line-clamp-3">
+                Nous avons ajouté 10 nouvelles bornes de recharge et des véhicules Tesla à notre flotte.
+              </p>
+              <a href="#"
+                class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
+                savoir plus →</a>
+            </div>
+
+            <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+              <span
+                class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Sécurité</span>
+              <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
+                <img src="./images/covid).jpg" alt="News 2"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Nettoyage certifié COVID-19</h3>
+              <p class="text-xs text-gray-500 mb-4 line-clamp-3">
+                Tous nos véhicules sont désinfectés entre chaque utilisation pour votre sécurité.
+              </p>
+              <a href="#"
+                class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
+                savoir plus →</a>
+            </div>
+
+            <div class="bg-white rounded-[2rem] p-4 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+              <span
+                class="bg-white border border-gray-200 text-xs font-bold px-3 py-1 rounded-full relative top-4 left-2 z-10 shadow-sm">Offre</span>
+              <div class="overflow-hidden rounded-2xl mb-4 mt-[-10px] h-48">
+                <img src="./images/Maserati-GranCabrio-Auto-Class-Magazine.jpg" alt="News 3"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              </div>
+              <h3 class="text-brand-blue font-bold text-lg mb-2 leading-tight">Week-end Spécial -20%</h3>
+              <p class="text-xs text-gray-500 mb-4 line-clamp-3">
+                Profitez de nos tarifs réduits pour vos escapades du week-end ce mois-ci.
+              </p>
+              <a href="#"
+                class="inline-block w-full text-center bg-brand-green text-white font-bold py-3 rounded-full shadow-md text-sm hover:bg-brand-dark transition">En
+                savoir plus →</a>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- PARTNERS SECTION -->
+        <section class="py-16 px-6 md:px-20 text-center">
+          <h2 class="text-brand-blue text-3xl md:text-4xl font-bold mb-10">Nos partenaires</h2>
+          <div
+            class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="./images/vgn-carsharing.jpg" class="h-8 md:h-10">
+            <img src="./images/nwzentrale.jpg" class="h-8 md:h-10">
+            <img src="./images/Verkehrsbetriebe Bayreuth.jpg" class="h-8 md:h-10">
+            <img src="./images/bcslogo.jpg" class="h-8 md:h-10">
+            <img src="./images/fragen-zu-carsharing-in-bayreuth.jpg" class="h-8 md:h-10">
+          </div>
+        </section>
 
       </div>
-    </section>
 
-    <!-- PARTNERS SECTION -->
-    <section class="py-16 px-6 md:px-20 text-center">
-      <h2 class="text-brand-blue text-3xl md:text-4xl font-bold mb-10">Nos partenaires</h2>
-      <div
-        class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-        <img src="./images/vgn-carsharing.jpg" class="h-8 md:h-10">
-        <img src="./images/nwzentrale.jpg" class="h-8 md:h-10">
-        <img src="./images/Verkehrsbetriebe Bayreuth.jpg" class="h-8 md:h-10">
-        <img src="./images/bcslogo.jpg" class="h-8 md:h-10">
-        <img src="./images/fragen-zu-carsharing-in-bayreuth.jpg" class="h-8 md:h-10">
-      </div>
-    </section>
+      <!-- FOOTER -->
+      </main>
+      <footer class="bg-brand-green text-black pt-16 pb-8 px-6 md:px-20 mt-12">
 
-  </div>
+        <div
+          class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-12 md:gap-8">
 
-  <!-- FOOTER -->
-  </main>
-  <footer class="bg-brand-green text-black pt-16 pb-8 px-6 md:px-20 mt-12">
+          <div class="md:w-1/4 flex justify-center md:justify-start">
+            <img src="./images/logobeayy.png" alt="Bayreuth Mobil Logo" class="w-48 md:w-56 mix-blend-multiply">
+          </div>
 
-    <div
-      class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-12 md:gap-8">
+          <div class="md:w-1/4 space-y-8">
+            <div>
+              <h3 class="font-extrabold uppercase tracking-widest mb-2">Email</h3>
+              <a href="mailto:info@bayreuthmobil.com"
+                class="font-bold text-sm hover:underline">info@bayreuthmobil.com</a>
+            </div>
+            <div>
+              <h3 class="font-extrabold uppercase tracking-widest mb-2">Agences</h3>
+              <p class="font-bold text-sm leading-relaxed">
+                Bayreuth Hauptbahnhof<br>
+                Bayreuth, Deutschland
+              </p>
+            </div>
+          </div>
 
-      <div class="md:w-1/4 flex justify-center md:justify-start">
-        <img src="./images/logobeayy.png" alt="Bayreuth Mobil Logo" class="w-48 md:w-56 mix-blend-multiply">
-      </div>
-
-      <div class="md:w-1/4 space-y-8">
-        <div>
-          <h3 class="font-extrabold uppercase tracking-widest mb-2">Email</h3>
-          <a href="mailto:info@bayreuthmobil.com" class="font-bold text-sm hover:underline">info@bayreuthmobil.com</a>
-        </div>
-        <div>
-          <h3 class="font-extrabold uppercase tracking-widest mb-2">Agences</h3>
-          <p class="font-bold text-sm leading-relaxed">
-            Bayreuth Hauptbahnhof<br>
-            Bayreuth, Deutschland
-          </p>
-        </div>
-      </div>
-
-      <div class="md:w-1/6">
+          <div class="md:w-1/6">
             <h3 class="font-extrabold uppercase tracking-widest mb-2">Contact Us</h3>
             <a href="tel:+31201234567" class="font-bold text-sm hover:underline">+31 20 123 4567</a>
           </div>
@@ -541,58 +541,58 @@
           </div>
 
         </div>
-  <!-- SCRIPTS -->
-  </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // --- 1. CAROUSEL LOGIC ---
-      const carousel = document.getElementById('fleetCarousel');
+        <!-- SCRIPTS -->
+      </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // --- 1. CAROUSEL LOGIC ---
+          const carousel = document.getElementById('fleetCarousel');
 
-      // Mobile Buttons
-      const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
+          // Mobile Buttons
+          const prevBtn = document.getElementById('prevBtn');
+          const nextBtn = document.getElementById('nextBtn');
 
-      // Desktop Buttons (NEW)
-      const prevBtnDesk = document.getElementById('prevBtnDesktop');
-      const nextBtnDesk = document.getElementById('nextBtnDesktop');
+          // Desktop Buttons (NEW)
+          const prevBtnDesk = document.getElementById('prevBtnDesktop');
+          const nextBtnDesk = document.getElementById('nextBtnDesktop');
 
-      // Helper function for scrolling
-      const scrollCarousel = (offset) => {
-        if (carousel) carousel.scrollBy({ left: offset, behavior: 'smooth' });
-      };
+          // Helper function for scrolling
+          const scrollCarousel = (offset) => {
+            if (carousel) carousel.scrollBy({ left: offset, behavior: 'smooth' });
+          };
 
-      // Attach listeners if buttons exist
-      if (nextBtn) nextBtn.addEventListener('click', () => scrollCarousel(300));
-      if (prevBtn) prevBtn.addEventListener('click', () => scrollCarousel(-300));
+          // Attach listeners if buttons exist
+          if (nextBtn) nextBtn.addEventListener('click', () => scrollCarousel(300));
+          if (prevBtn) prevBtn.addEventListener('click', () => scrollCarousel(-300));
 
-      if (nextBtnDesk) nextBtnDesk.addEventListener('click', () => scrollCarousel(400));
-      if (prevBtnDesk) prevBtnDesk.addEventListener('click', () => scrollCarousel(-400));
+          if (nextBtnDesk) nextBtnDesk.addEventListener('click', () => scrollCarousel(400));
+          if (prevBtnDesk) prevBtnDesk.addEventListener('click', () => scrollCarousel(-400));
 
-      // --- 2. MOBILE MENU LOGIC (Keep existing) ---
-      const menuBtn = document.getElementById('menuBtn');
-      const closeBtn = document.getElementById('closeBtn');
-      const mobileMenu = document.getElementById('mobileMenu');
+          // --- 2. MOBILE MENU LOGIC (Keep existing) ---
+          const menuBtn = document.getElementById('menuBtn');
+          const closeBtn = document.getElementById('closeBtn');
+          const mobileMenu = document.getElementById('mobileMenu');
 
-      if (menuBtn && mobileMenu && closeBtn) {
-        menuBtn.addEventListener('click', () => {
-          // Toggle 'hidden' instead of just removing it
-          // This lets you open AND close by clicking the hamburger
-          mobileMenu.classList.toggle('hidden');
-        });
+          if (menuBtn && mobileMenu && closeBtn) {
+            menuBtn.addEventListener('click', () => {
+              // Toggle 'hidden' instead of just removing it
+              // This lets you open AND close by clicking the hamburger
+              mobileMenu.classList.toggle('hidden');
+            });
 
-        closeBtn.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-        });
+            closeBtn.addEventListener('click', () => {
+              mobileMenu.classList.add('hidden');
+            });
 
-        // OPTIONAL: Close menu if clicking outside of it
-        document.addEventListener('click', (e) => {
-          if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-            mobileMenu.classList.add('hidden');
+            // OPTIONAL: Close menu if clicking outside of it
+            document.addEventListener('click', (e) => {
+              if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+              }
+            });
           }
         });
-      }
-    });
-  </script>
+      </script>
 </body>
 
 </html>

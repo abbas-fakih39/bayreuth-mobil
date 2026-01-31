@@ -17,72 +17,76 @@
 
     <!-- NAVIGATION -->
     <header>
-    <nav
-        class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
+        <nav
+            class="flex justify-end md:justify-start items-center md:gap-10 py-6 px-6 md:px-20 bg-transparent relative z-50 max-w-[1400px] mx-auto">
 
-        <div
-            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
-            <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil"
-                    class="h-auto mix-blend-multiply"></a>
-        </div>
+            <div
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none w-32 md:w-40 shrink-0 z-50">
+                <a href="index.html"><img src="./images/logobeayy.png" alt="Bayreuth Mobil"
+                        class="h-auto mix-blend-multiply"></a>
+            </div>
 
-        <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
-            <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
-            <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
-            <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a></li>
-            <li><a href="contact.html" class="hover:text-brand-green transition">Contact</a></li>
-        </ul>
-
-        <div class="hidden md:block shrink-0">
-            <a href="#"
-                class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
-                Se connecter
-            </a>
-        </div>
-
-        <button id="menuBtn" class="text-brand-green focus:outline-none md:hidden z-50">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </button>
-
-        <div id="mobileMenu"
-            class="absolute top-20 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
-
-            <button id="closeBtn" class="self-end text-gray-400 hover:text-red-500 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-
-            <ul class="space-y-4 text-left font-bold text-brand-blue text-lg">
-                <li><a href="vehicules.html"
-                        class="block hover:text-brand-green hover:translate-x-1 transition-transform">Nos
-                        véhicules</a></li>
-                <li><a href="tarifs.html"
-                        class="block hover:text-brand-green hover:translate-x-1 transition-transform">Tarifs</a></li>
-                <li><a href="comment-ca-marche.html"
-                        class="block hover:text-brand-green hover:translate-x-1 transition-transform">Comment ça
-                        marche</a></li>
-                <li><a href="contact.html"
-                        class="block hover:text-brand-green hover:translate-x-1 transition-transform">Contact</a></li>
+            <ul class="hidden md:flex gap-10 md:ml-auto font-bold text-brand-blue text-sm uppercase tracking-wide">
+                <li><a href="vehicules.html" class="hover:text-brand-green transition">Nos véhicules</a></li>
+                <li><a href="tarifs.html" class="hover:text-brand-green transition">Tarifs</a></li>
+                <li><a href="comment-ca-marche.html" class="hover:text-brand-green transition">Comment ça marche</a>
+                </li>
+                <li><a href="contact.html" class="hover:text-brand-green transition">Contact</a></li>
             </ul>
 
-            <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
+            <div class="hidden md:block shrink-0">
                 <a href="#"
-                    class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+                    class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-sm">
                     Se connecter
-                </a>
-                <a href="#"
-                    class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
-                    S'inscrire
                 </a>
             </div>
 
-        </div>
-    </nav>
+            <button id="menuBtn" class="text-brand-green focus:outline-none md:hidden z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+            <div id="mobileMenu"
+                class="absolute top-20 right-6 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-[60] hidden flex-col p-6 transition-all duration-300 origin-top-right">
+
+                <button id="closeBtn" class="self-end text-gray-400 hover:text-red-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <ul class="space-y-4 text-left font-bold text-brand-blue text-lg">
+                    <li><a href="vehicules.html"
+                            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Nos
+                            véhicules</a></li>
+                    <li><a href="tarifs.html"
+                            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Tarifs</a>
+                    </li>
+                    <li><a href="comment-ca-marche.html"
+                            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Comment ça
+                            marche</a></li>
+                    <li><a href="contact.html"
+                            class="block hover:text-brand-green hover:translate-x-1 transition-transform">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-3">
+                    <a href="#"
+                        class="text-center border-2 border-brand-green text-brand-green py-2 rounded-full font-bold text-sm hover:bg-brand-green hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+                        Se connecter
+                    </a>
+                    <a href="#"
+                        class="text-center bg-brand-green text-white py-2 rounded-full font-bold text-sm shadow-md hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 transform">
+                        S'inscrire
+                    </a>
+                </div>
+
+            </div>
+        </nav>
     </header>
 
     <!-- Contenu principal de la page Véhicules -->
